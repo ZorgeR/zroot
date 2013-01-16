@@ -15,9 +15,6 @@ case $ret in
 			then
 				mount -o bind / /ezxlocal/download/mystuff/ROOT
 				mount -o bind /ezxlocal /ezxlocal/download/mystuff/ROOT/ezxlocal
-				mount -o bind /mmc/mmca1 /ezxlocal/download/mystuff/ROOT/mmc/mmca1
-				mount -o bind /mmc/movinand1 /ezxlocal/download/mystuff/ROOT/mmc/movinand1
-				mount -o bind /ezxlocal/download/mystuff /ezxlocal/download/mystuff/ROOT/ezxlocal/download/mystuff
 				mount -o bind /ezxlocal/ext3 /ezxlocal/download/mystuff/ROOT/ezxlocal/ext3
 				mount -o bind /usr/setup /ezxlocal/download/mystuff/ROOT/usr/setup
 				mount -o bind /dev/shm /ezxlocal/download/mystuff/ROOT/dev/shm
@@ -35,9 +32,6 @@ case $ret in
 				mkdir -p /ezxlocal/download/mystuff/ROOT
 				mount -o bind / /ezxlocal/download/mystuff/ROOT
 				mount -o bind /ezxlocal /ezxlocal/download/mystuff/ROOT/ezxlocal
-				mount -o bind /mmc/mmca1 /ezxlocal/download/mystuff/ROOT/mmc/mmca1
-				mount -o bind /mmc/movinand1 /ezxlocal/download/mystuff/ROOT/mmc/movinand1
-				mount -o bind /ezxlocal/download/mystuff /ezxlocal/download/mystuff/ROOT/ezxlocal/download/mystuff
 				mount -o bind /ezxlocal/ext3 /ezxlocal/download/mystuff/ROOT/ezxlocal/ext3
 				mount -o bind /usr/setup /ezxlocal/download/mystuff/ROOT/usr/setup
 				mount -o bind /dev/shm /ezxlocal/download/mystuff/ROOT/dev/shm
@@ -54,11 +48,8 @@ case $ret in
 		fi
 		;;
 	2)
-		umount /ezxlocal/download/mystuff/ROOT/ezxlocal/download/mystuff
 		umount /ezxlocal/download/mystuff/ROOT/ezxlocal/ext3
 		umount /ezxlocal/download/mystuff/ROOT/ezxlocal
-		umount /ezxlocal/download/mystuff/ROOT/mmc/mmca1
-		umount /ezxlocal/download/mystuff/ROOT/mmc/movinand1
 		umount /ezxlocal/download/mystuff/ROOT/usr/setup
 		umount /ezxlocal/download/mystuff/ROOT/dev/shm
 		umount /ezxlocal/download/mystuff/ROOT/usr/securesetup
