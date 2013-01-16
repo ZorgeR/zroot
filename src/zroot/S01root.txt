@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# zroot - is simply script to access root derictory directly from file manager.
+# Please don't modify code below.
+
+mkdir -p /ezxlocal/download/mystuff/ROOT
+mount -o bind / /ezxlocal/download/mystuff/ROOT
