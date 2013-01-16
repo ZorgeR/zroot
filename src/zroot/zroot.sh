@@ -67,12 +67,12 @@ case $ret in
 		$mypath/showNotify "Complete" "Root access closed" 1 5
 		;;
 	3)
-		if [ ! -f /ezxlocal/download/mystuff/unKnown/S01root.txt ]
+		if [ ! -f /ezxlocal/download/mystuff/unKnown/S01zroot.txt ]
 		then
-			cp $mypath/S01root.txt /ezxlocal/download/mystuff/unKnown/S01root.txt
+			cp $mypath/S01zroot.txt /ezxlocal/download/mystuff/unKnown/S01zroot.txt
 			$mypath/showNotify "Complete" "Script is added to autorun" 1 5
 		else
-			rm -f /ezxlocal/download/mystuff/unKnown/S01swapest.txt
+			rm -f /ezxlocal/download/mystuff/unKnown/S01zroot.txt
 			$mypath/showNotify "Complete" "Script is removed from autorun." 1 5
 		fi
 		;;

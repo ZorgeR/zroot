@@ -2,5 +2,5 @@ Name = zroot
 Icon = icon.png
 Exec = zroot.sh
 Author = Zorge.R
-Version = 2.00
+Version = 3.00
 Comment = http://motofan.ru/
